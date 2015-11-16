@@ -57,19 +57,22 @@ CONFIG_SSL_ONLY = {
         'url': 'https://github.com:443',
         'timeout': 1,
         'check_certificate_expiration': True,
-        'days_warning': 14
+        'days_warning': 14,
+        'days_critical': 7
     }, {
         'name': 'cert_exp_soon',
         'url': 'https://google.com',
         'timeout': 1,
         'check_certificate_expiration': True,
-        'days_warning': 9999
+        'days_warning': 9999,
+        'days_critical': 7
     }, {
         'name': 'conn_error',
         'url': 'https://thereisnosuchlink.com',
         'timeout': 1,
         'check_certificate_expiration': True,
-        'days_warning': 14
+        'days_warning': 14,
+        'days_critical': 7
     }
     ]
 }
@@ -80,7 +83,8 @@ CONFIG_EXPIRED_SSL = {
         'url': 'https://github.com',
         'timeout': 1,
         'check_certificate_expiration': True,
-        'days_warning': 14
+        'days_warning': 14,
+        'days_critical': 7
     },
     ]
 }
@@ -91,7 +95,8 @@ CONFIG_UNORMALIZED_INSTANCE_NAME = {
         'url': 'https://github.com',
         'timeout': 1,
         'check_certificate_expiration': True,
-        'days_warning': 14
+        'days_warning': 14,
+        'days_critical': 7
     },
     ]
 }
